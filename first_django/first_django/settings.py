@@ -75,6 +75,32 @@ TEMPLATES = [
 WSGI_APPLICATION = 'first_django.wsgi.application'
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+    },
+    'file': {
+        'class': 'logging.FileHandler',
+        'filename': 'logs/django.log',
+    },
+ },
+ 'loggers': {
+    'django': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+ },
+    'django_firstapp': {
+        'handlers': ["console", "file"],
+        'level': 'INFO',
+        'propagate': True,
+        },
+    },
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 

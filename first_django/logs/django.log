@@ -1,0 +1,8 @@
+Watching for file changes with StatReloader
+About page was visited by 
+"GET /about/ HTTP/1.1" 200 810
+Watching for file changes with StatReloader
+Hidden ip.
+"GET /about/ HTTP/1.1" 200 810
+Hidden ip.
+"GET / HTTP/1.1" 200 1282
